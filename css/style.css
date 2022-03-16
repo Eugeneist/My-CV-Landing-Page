@@ -288,3 +288,135 @@ a:hover {
   width: 150px;
   height: 150px;
 }
+
+.works {
+  background-color: #fff;
+  padding: 85px 100px 95px 65px;
+}
+
+.works__inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.works__box {
+  text-align: center;
+}
+
+.works__top {
+  margin: 0 0 140px 0;
+}
+
+.works__title {
+  font: 48px/50px "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #2c4355;
+  text-transform: uppercase;
+  margin: 0 0 45px 0;
+}
+
+.works__list {
+  list-style: none;
+  margin: 0 0 100px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 50px;
+  justify-content: space-between;
+}
+
+.works__item {
+  /* overflow: hidden; */
+  border-radius: 10px;
+}
+
+.works__img {
+  width: 380px;
+  height: 200px;
+  transition: 1s;
+  border-radius: 10px;
+  border: 1px solid #2c4355;
+}
+
+.works__img:hover {
+  transform: scale(1.2);
+}
+
+.works__btn {
+  display: inline-block;
+  min-width: 200px;
+  padding: 13px 36px 13px 36px;
+  background-color: #2c4355;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.works__btn:hover {
+  color: #fff;
+  background-color: #323232;
+  transition: all 0.3s;
+}
+
+.works__btn:active {
+  background-color: #2c4355;
+  transition: all 0.3s;
+}
+
+.experience {
+  background-color: #2c4355;
+  padding: 85px 100px 95px 65px;
+}
+
+.experience__inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__left {
+  text-align: center;
+  padding: 250px 0 200px 0;
+}
+
+.experience__title {
+  font: 48px/50px "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 45px 0;
+}
+
+.experience__text {
+  font: 24px/28px "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.education {
+  background-color: #fff;
+  padding: 85px 100px 95px 65px;
+}
+
+.education__inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.education__title {
+  font: 48px/50px "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #2c4355;
+  text-transform: uppercase;
+  margin: 0 0 45px 0;
+}
