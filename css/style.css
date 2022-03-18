@@ -420,3 +420,65 @@ a:hover {
   text-transform: uppercase;
   margin: 0 0 45px 0;
 }
+
+.education__list {
+  list-style: none;
+  margin: 0;
+  padding: 100px 0 0 0;
+}
+
+.education__item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+
+.education__img {
+  width: 112px;
+  height: 112px;
+}
+
+.education__sert {
+  width: 159px;
+  height: 112px;
+  transition: all 0.5s;
+}
+
+.education__sert:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.education__text {
+  font: 18px/24px "Playfair Display", sans-serif;
+  font-weight: 700;
+  width: 279px;
+  text-align: center;
+  color: #2c4355;
+  margin: 0;
+}
+
+.education__link {
+  font: 18px/24px "Playfair Display", sans-serif;
+  font-weight: 700;
+  width: 279px;
+  text-align: center;
+  color: #2c4355;
+}
+
+.education__link:hover {
+  color: yellow;
+}
+
+.footer {
+  background-color: #2c4355;
+  text-align: center;
+}
+
+.footer__text {
+  font: 14px/18px "Playfair Display", sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  color: #fff;
+  padding: 50px;
+}
