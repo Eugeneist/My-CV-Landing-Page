@@ -8,16 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>My CV Landing Page</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <header class="header">
+            <header class="header" id="home">
                 <div class="box">
-                    <button class="box__btn">Download Resume</button>
-                    <h1 class="box__title">Yevhen Rudofylov</h1>
-                    <p class="box__text">Junior Frontend Developer</p>
+                    <!-- <button class="box__btn" data-aos="fade-up" data-aos-duration="2000">Download Resume</button> -->
+                    <a href="files/CV LinkedIn.pdf" download="" target="_blank"><button class="box__btn" data-aos="fade-up" data-aos-duration="2000">Download Resume</button></a>
+                    <h1 class="box__title" data-aos="fade-up" data-aos-duration="2000">Yevhen Rudofylov</h1>
+                    <p class="box__text" data-aos="fade-up" data-aos-duration="3000">Junior Frontend Developer</p>
                 </div>
             </header>
             <div class="sticky-menu">
@@ -27,21 +29,21 @@
                     </strong>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Works</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Experience</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Education</a></li>
+                            <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="#aboutme" class="menu__link">About me</a></li>
+                            <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                            <li class="menu__item"><a href="#works" class="menu__link">Works</a></li>
+                            <li class="menu__item"><a href="#experience" class="menu__link">Experience</a></li>
+                            <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
                         </ul>
                     </nav>
                </div>
             </div>
             <main class="main">
-                <section class="aboutme">
+                <section class="aboutme" id="aboutme">
                     <div class="aboutme__inner">
-                         <div class="aboutme__left">
-                             <h2 class="aboutme__title">About me</h2>
+                         <div class="aboutme__left" data-aos="fade-right" data-aos-duration="1000">
+                             <h2 class="aboutme__title" >About me</h2>
                              <div class="aboutme__info">
                                  <p class="aboutme__subtitle">E-mail</p>
                                  <p class="aboutme__text"><a href="mailto:rudofiloveugene@gmail.com" class="aboutme__link">rudofiloveugene@gmail.com</a></p>
@@ -53,7 +55,7 @@
                                  <p class="aboutme__text">Kharkiv, Ukraine</p>
                              </div>
                          </div>
-                         <div class="aboutme__right">
+                         <div class="aboutme__right" data-aos="fade-left" data-aos-duration="1000">
                              <div class="aboutme__photo">
                                  <img class="aboutme__pic" src="images/photo.jpg" alt="#">
                              </div>
@@ -69,52 +71,55 @@
                     </div>
                 </section>
 
-                <section class="skills">
+                <section class="skills" id="skills">
                      <div class="skills__inner">
                         <div class="skills__left">
                             <ul class="skills__list">
-                                <li class="skills__item"><img src="images/skills/html-5-logo-svgrepo-com.svg" alt="#" class="skills__img"></li>
-                                <li class="skills__item"><img src="images/skills/css-3-svgrepo-com.svg" alt="#" class="skills__img"></li>
-                                <li class="skills__item"><img src="images/skills/sass-1.svg" alt="#" class="skills__img"></li>
-                                <li class="skills__item"><img src="images/skills/logo-javascript.svg" alt="#" class="skills__img"></li>
-                                <li class="skills__item"><img src="images/skills/React-icon.svg" alt="#" class="skills__img"></li>
-                                <li class="skills__item"><img src="images/skills/git-svgrepo-com.svg" alt="#" class="skills__img"></li>
+                                <li class="skills__item" data-aos="flip-left" data-aos-duration="500"><img src="images/skills/html-5-logo-svgrepo-com.svg" alt="#" class="skills__img"></li>
+                                <li class="skills__item" data-aos="flip-left" data-aos-duration="1000"><img src="images/skills/css-3-svgrepo-com.svg" alt="#" class="skills__img"></li>
+                                <li class="skills__item" data-aos="flip-left" data-aos-duration="1500"><img src="images/skills/sass-1.svg" alt="#" class="skills__img"></li>
+                                <li class="skills__item" data-aos="flip-left" data-aos-duration="2000"><img src="images/skills/logo-javascript.svg" alt="#" class="skills__img"></li>
+                                <li class="skills__item" data-aos="flip-left" data-aos-duration="2500"><img src="images/skills/React-icon.svg" alt="#" class="skills__img"></li>
+                                <li class="skills__item" data-aos="flip-left" data-aos-duration="3000"><img src="images/skills/git-svgrepo-com.svg" alt="#" class="skills__img"></li>
                             </ul>
                         </div>
-                        <div class="skills__right">
+                        <div class="skills__right" data-aos="fade-left" data-aos-duration="1000">
                             <h2 class="skills__title">My skills</h2>
                         </div>
                      </div>
                 </section>
                 
-                <section class="works">
+                <section class="works" id="works">
                      <div class="works__inner">
-                        <div class="works__top">
+                        <div class="works__top" data-aos="fade-right" data-aos-duration="1000">
                             <h2 class="works__title">My works</h2>
                         </div>
                         <div class="works__box">
                             <ul class="works__list">
-                                <li class="works__item"><a href="https://eugeneist.github.io/KONSTUCT-demo-/" target="_blank" class="works__link"><img src="images/works/work01.jpg" alt="site01" class="works__img"></a></li>
-                                <li class="works__item"><a href="https://eugeneist.github.io/In-Time-demo-/" target="_blank" class="works__link"><img src="images/works/work02.jpg" alt="site02" class="works__img"></a></li>
-                                <li class="works__item"><a href="https://eugeneist.github.io/IT-Studio-demo-/" target="_blank" class="works__link"><img src="images/works/work03.jpg" alt="site03" class="works__img"></a></li>
+                                <li class="works__item" data-aos="flip-left" data-aos-duration="2000"><a href="https://eugeneist.github.io/KONSTUCT-demo-/" target="_blank" class="works__link"><img src="images/works/work01.jpg" alt="site01" class="works__img"></a></li>
+                                <li class="works__item" data-aos="flip-left" data-aos-duration="2000"><a href="https://eugeneist.github.io/In-Time-demo-/" target="_blank" class="works__link"><img src="images/works/work02.jpg" alt="site02" class="works__img"></a></li>
+                                <li class="works__item" data-aos="flip-left" data-aos-duration="2000"><a href="https://eugeneist.github.io/IT-Studio-demo-/" target="_blank" class="works__link"><img src="images/works/work03.jpg" alt="site03" class="works__img"></a></li>
                             </ul>
-                            <a href="#" class="works__btn">More works</a>
+                            <a href="#" class="works__btn" data-aos="fade-up" data-aos-duration="1000">More works</a>
                         </div>
                      </div>
                 </section>
-                <section class="experience">
+                <section class="experience" id="experience">
                     <div class="experience__inner">
-                        <div class="experience__left">
+                        <div class="experience__left" data-aos="fade-right" data-aos-duration="1000">
                             <p class="experience__text">now i am still learning, real experience will be very soon... :)</p>
                         </div>
-                        <div class="experience__right">
+                        <div class="experience__right" data-aos="fade-left" data-aos-duration="1000">
                             <h2 class="experience__title">Work experience</h2>
                         </div>
                     </div>
                 </section>
-                <section class="education">
+                <section class="education" id="education">
                     <div class="education__inner">
-                        <div class="education__left">
+                        <div class="education__left" data-aos="fade-right" data-aos-duration="1000">
+                            <h2 class="education__title">My education</h2>
+                        </div>
+                        <div class="education__right" data-aos="fade-left" data-aos-duration="1000">
                             <ul class="education__list">
                                 <li class="education__item">
                                     <img src="images/education/ntukhpi.jpg" alt="#" class="education__img">
@@ -136,9 +141,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="education__right">
-                            <h2 class="education__title">My education</h2>
-                        </div>
                     </div>
                 </section>
             </main>
@@ -147,6 +149,7 @@
             </footer>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

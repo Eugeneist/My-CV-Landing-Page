@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -481,4 +482,8 @@ a:hover {
   margin: 0 auto;
   color: #fff;
   padding: 50px;
+}
+
+.active {
+  color: #a5bbce;
 }
