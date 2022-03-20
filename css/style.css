@@ -487,3 +487,9 @@ a:hover {
 .active {
   color: #a5bbce;
 }
+
+@media (max-width: 1500px) {
+  .wrapper {
+    overflow: hidden;
+  }
+}
