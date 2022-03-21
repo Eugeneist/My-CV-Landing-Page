@@ -46,6 +46,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 140px 10px 270px 10px;
+  position: relative;
 }
 
 .sticky-menu {
@@ -101,14 +102,15 @@ a:hover {
 }
 
 .box__btn {
-  font: 20px/27px "Playfair Display", sans-serif;
+  font: 15px/19px "Playfair Display", sans-serif;
   font-weight: 400;
   color: #fff;
-  width: 264px;
-  height: 58px;
+  width: 132px;
+  display: inline-block;
+  padding: 10px 30px;
   border-radius: 40px;
-  background: #2c4355;
-  border: 1px solid #000000;
+  background: rgba(60, 91, 116, 50%);
+  border: 1px solid #fff;
   cursor: pointer;
   margin: 0 0 95px 0;
 }
@@ -120,6 +122,63 @@ a:hover {
 .logo__link {
   font: 20px/24px "Playfair Display", sans-serif;
   font-weight: 400;
+}
+
+.scroll-down {
+  position: absolute;
+  /* left: 50%; */
+  bottom: 20px;
+  border: 2px solid #fff;
+  background-color: rgba(60, 91, 116, 50%);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: block;
+  z-index: 10;
+  text-align: center;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.scroll-down::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 3px solid #fff;
+  height: 12px;
+  width: 12px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1.2s ease-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    top: 70%;
+  }
 }
 
 /* MAIN */
@@ -237,16 +296,32 @@ a:hover {
   background-image: url(../images/socials/github.svg);
 }
 
+.github:hover {
+  background-image: url(../images/socials/github-hover.svg);
+}
+
 .facebook {
   background-image: url(../images/socials/facebook.svg);
+}
+
+.facebook:hover {
+  background-image: url(../images/socials/facebook-hover.svg);
 }
 
 .linkedin {
   background-image: url(../images/socials/linkedin.svg);
 }
 
+.linkedin:hover {
+  background-image: url(../images/socials/linkedin-hover.svg);
+}
+
 .telegram {
   background-image: url(../images/socials/telegram.svg);
+}
+
+.telegram:hover {
+  background-image: url(../images/socials/telegram-hover.svg);
 }
 
 .skills__inner {
@@ -256,6 +331,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
+
 .skills {
   background-color: #2c4355;
   padding: 85px 165px 160px 65px;
@@ -403,15 +479,17 @@ a:hover {
 
 .education {
   background-color: #fff;
-  padding: 85px 100px 95px 65px;
+  padding: 85px 100px 85px 65px;
 }
 
 .education__inner {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column; */
 }
 
 .education__title {
@@ -419,13 +497,13 @@ a:hover {
   font-weight: 400;
   color: #2c4355;
   text-transform: uppercase;
-  margin: 0 0 45px 0;
+  margin: 0 0 50px 0;
 }
 
 .education__list {
   list-style: none;
   margin: 0;
-  padding: 100px 0 0 0;
+  padding: 0 0 10px 165px;
 }
 
 .education__item {
@@ -488,7 +566,7 @@ a:hover {
   color: #a5bbce;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
   .wrapper {
     overflow: hidden;
   }
