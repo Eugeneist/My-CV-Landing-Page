@@ -739,3 +739,15 @@ a:hover {
     overflow: hidden;
   }
 }
+
+@media (max-width: 600px) {
+  .box__title {
+    font-weight: 400;
+    font-size: 45px;
+  }
+
+  .box__text {
+    font-weight: 700;
+    font-size: 17px;
+  }
+}
