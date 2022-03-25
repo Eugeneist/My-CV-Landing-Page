@@ -608,6 +608,15 @@ a:hover {
   padding: 25px 15px 25px 15px;
 }
 
+.footer__inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__text {
   font: 14px/18px "Playfair Display", sans-serif;
   font-weight: 400;
@@ -756,6 +765,15 @@ a:hover {
   .works__item:last-child {
     padding: 0;
   }
+
+  .aboutme,
+  .skills,
+  .works,
+  .experience,
+  .education {
+    height: auto;
+    padding: 45px 60px 25px 60px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -800,15 +818,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .aboutme,
-  .skills,
-  .works,
-  .experience,
-  .education {
-    height: auto;
-    padding: 45px 60px 25px 60px;
   }
 
   .experience__bot {
@@ -857,6 +866,56 @@ a:hover {
 
   .footer__socials {
     display: inline-block;
+    position: relative;
+  }
+
+  .socials__list {
+    padding: revert;
+  }
+
+  .socials__item {
+    margin: 0 40px 0 0;
+  }
+
+  .education__item {
+    display: block;
+    margin: 0 0 65px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .education__item::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #2c4355;
+    position: absolute;
+    bottom: -35px;
+    left: 105px;
+  }
+
+  .education__img {
+    position: absolute;
+    top: -4px;
+    left: -130px;
+  }
+
+  .education__text {
+    margin: 0 0 25px 0;
+  }
+
+  .footer__socials::after {
+    content: "";
+    width: 180px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 8px;
+    left: 90px;
+  }
+
+  .menu__item {
+    margin: 0 0 35px 0;
   }
 }
 
@@ -869,21 +928,69 @@ a:hover {
   .box__text {
     font-weight: 700;
     font-size: 17px;
+  }
+
+  .aboutme__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0 0 0 0;
+  }
+
+  .aboutme__bot {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .aboutme__bot-right {
+    margin: 0 0 15px 20px;
+  }
+
+  .aboutme__text {
+    padding: 0 0 0 15px;
+  }
+
+  .education__bot {
+    align-self: flex-end;
   }
 }
 
 @media (max-width: 480px) {
-  /* some css  */
-}
-
-@media (max-width: 600px) {
-  .box__title {
-    font-weight: 400;
-    font-size: 45px;
+  .scroll-down {
+    bottom: 70px;
   }
 
-  .box__text {
-    font-weight: 700;
-    font-size: 17px;
+  .title {
+    font: 30px/34px "Playfair Display", sans-serif;
+  }
+
+  .aboutme__subtitle {
+    font: 16px/20px "Playfair Display", sans-serif;
+  }
+
+  .aboutme__text {
+    font: 14px/18px "Playfair Display", sans-serif;
+  }
+
+  .skills__top {
+    padding: 0 0 15px 0;
+  }
+
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .works__img {
+    width: 253px;
+    height: 133px;
+  }
+
+  .education__img {
+    position: static;
+    margin: 0 0 10px 0;
+  }
+
+  .menu {
+    width: 60%;
   }
 }
