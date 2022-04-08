@@ -401,6 +401,30 @@ a:hover {
   justify-items: center;
 }
 
+.skills__item{
+  position: relative;
+}
+
+.skills__item:nth-child(4)::after{
+  content: "in progress...";
+  font: 12px/16px "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  bottom: -15px;
+  left: 43px;
+  position: absolute;
+}
+
+.skills__item:nth-child(5)::after{
+  content: "in progress...";
+  font: 12px/16px "Playfair Display", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  bottom: -15px;
+  left: 43px;
+  position: absolute;
+}
+
 .skills__img {
   width: 150px;
   height: 150px;
@@ -862,6 +886,18 @@ a:hover {
 
   .skills__list {
     grid-gap: 20px;
+  }
+
+  .skills__item:nth-child(4)::after{
+    font: 9px/13px "Playfair Display", sans-serif;
+    bottom: -16px;
+    left: 29px;
+  }
+  
+  .skills__item:nth-child(5)::after{
+    font: 9px/13px "Playfair Display", sans-serif;
+    bottom: -16px;
+    left: 29px;
   }
 
   .works__list {
