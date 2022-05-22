@@ -112,7 +112,7 @@ a:hover {
   font: 12px/12px "Playfair Display", sans-serif;
   font-weight: 400;
   color: #fff;
-  width: 132px;
+  width: 150px;
   display: inline-block;
   padding: 10px 30px;
   border-radius: 40px;
@@ -403,16 +403,6 @@ a:hover {
 
 .skills__item{
   position: relative;
-}
-
-.skills__item:nth-child(4)::after{
-  content: "in progress...";
-  font: 12px/16px "Playfair Display", sans-serif;
-  font-weight: 400;
-  color: #fff;
-  bottom: -15px;
-  left: 43px;
-  position: absolute;
 }
 
 .skills__item:nth-child(5)::after{
