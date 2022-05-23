@@ -22,20 +22,6 @@ AOS.init({
   
 });
 
-// Menu active:
-
-let menu = document.querySelector('.menu');
-
-	menu.onclick = function(e) {
-		if (e.target.tagName.toLowerCase() != 'a') return;
-
-		[].forEach.call(menu.querySelectorAll('a'), function(item) {
-			item.classList.remove('active');
-		});
-
-		e.target.classList.add('active');
-	};
-
 
 // Burger menu:
 
@@ -43,35 +29,42 @@ const iconMenu = document.querySelector('.sticky-menu__icon');
 const burgerMenu = document.querySelector('.menu');
 
 if (iconMenu){
-    iconMenu.addEventListener("click", function(e) {
+    iconMenu.addEventListener("click", function() {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         burgerMenu.classList.toggle('_active');
-    })
+    });
 }
 
-// const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-// if (menuLinks.length > 0) {
-//     menuLinks.forEach(menuLink => {
-//         menuLink.addEventListener("click", onMenuLinkClick);
-//     });
+const menuLinks = document.querySelectorAll(`.menu__link[data-goto]`);
+if(menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+        menuLink.addEventListener("click", onMenuLinkClick);
+    });
+};
 
-//     function onMenuLinkClick(e) {
-//         const menuLink = e.target;
+function onMenuLinkClick (event) {
+    const menuLink = event.target;
+
+    if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+        const gotoBlock = document.querySelector(menuLink.dataset.goto);
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.sticky-menu').offsetHeight;
+
+        if(iconMenu.classList.contains('_active')) {
+            document.body.classList.remove('_lock');
+            iconMenu.classList.remove('_active');
+            burgerMenu.classList.remove('_active');
+        }
+
+        window.scrollTo({
+            top:gotoBlockValue,
+            behavior: "smooth"
+        });
     
-//         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-//             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-//             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - 
-//         }
+        event.preventDefault();
+    }
 
-//         if (iconMenu.classList.contains('_active')) {
-//             document.body.classList.remove('_lock');
-//             iconMenu.classList.remove('_active');
-//             burgerMenu.classList.remove('_active');
-//         }
-//     }
-
-// }
+};
 
 
 
