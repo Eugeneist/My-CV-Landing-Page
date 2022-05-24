@@ -505,7 +505,7 @@ a:hover {
   text-align: center;
   padding: 15px;
   border-radius: 20px;
-  border: 1px solid #2c4355;
+  border: 2px solid #77b6e6;
   margin: 0 auto;
   position: relative;
   visibility: hidden;
@@ -517,9 +517,23 @@ a:hover {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(/images/message.jpg);
-  top:15px;
-  left: 16px;
+  background-image: url(/images/others/warning.svg);
+  background-repeat: no-repeat;
+  top:18px;
+  left: 19px;
+  position: absolute;
+  z-index: 2;
+}
+
+.works__message::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 4px #77b6e6 solid ;
+  border-radius: 50%;
+  top:11px;
+  left: 13px;
   position: absolute;
 }
 
@@ -988,7 +1002,7 @@ a:hover {
 @media (max-width: 600px) {
   .box__title {
     font-weight: 400;
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .box__text {
