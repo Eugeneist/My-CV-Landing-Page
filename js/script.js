@@ -66,5 +66,19 @@ function onMenuLinkClick (event) {
 
 };
 
+// More works
 
+const worksButton = document.querySelector('.works__btn');
+const worksMessage = document.querySelector('.works__message');
+worksButton.addEventListener("click", handleWorksClick);
 
+function handleWorksClick(event) {
+    worksMessage.classList.add('works__message_active');
+    worksButton.disabled = true;
+    setTimeout(hideMessage, 3000);
+}
+
+function hideMessage() {
+    worksMessage.classList.remove('works__message_active');
+    worksButton.disabled = false;
+}

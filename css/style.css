@@ -438,6 +438,7 @@ a:hover {
 
 .works__bot {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .works__top {
@@ -498,6 +499,41 @@ a:hover {
   background-color: #2c4355;
   transition: all 0.3s;
 }
+
+.works__message{
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #2c4355;
+  margin: 0 auto;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.works__message::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/message.jpg);
+  top:15px;
+  left: 16px;
+  position: absolute;
+}
+
+.works__message_active{
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.works__message-text{
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
 
 /* EXPERIENCE */
 
@@ -1048,5 +1084,16 @@ a:hover {
   .works,
   .education {
     padding: 45px 60px 25px 40px;
+  }
+}
+
+@media (max-height: 630px) {
+  .aboutme,
+  .skills,
+  .works,
+  .experience,
+  .education {
+    height: auto;
+    padding: 45px 60px 25px 60px;
   }
 }
