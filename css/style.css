@@ -307,6 +307,8 @@ a:hover {
   border-radius: 377px;
 }
 
+/* SOCIALS ICONS */
+
 .socials__list {
   padding: 0 0 0 30px;
   margin: 0;
@@ -328,36 +330,26 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.github {
-  background-image: url(../images/socials/github.svg);
+.socials__svgicon {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
-.github:hover {
-  background-image: url(../images/socials/github-hover.svg);
+.socials__svgicon:hover .github_0 {
+  fill:#24292f;
 }
 
-.facebook {
-  background-image: url(../images/socials/facebook.svg);
+.socials__svgicon:hover .facebook_0 {
+  fill:#3b5998;
 }
 
-.facebook:hover {
-  background-image: url(../images/socials/facebook-hover.svg);
+.socials__svgicon :hover .linkedin_0 {
+  fill:#0a66c2;
 }
 
-.linkedin {
-  background-image: url(../images/socials/linkedin.svg);
-}
-
-.linkedin:hover {
-  background-image: url(../images/socials/linkedin-hover.svg);
-}
-
-.telegram {
-  background-image: url(../images/socials/telegram.svg);
-}
-
-.telegram:hover {
-  background-image: url(../images/socials/telegram-hover.svg);
+.socials__svgicon:hover .telegram_0 {
+  fill:#0088cc;
 }
 
 /* SKILLS */
@@ -403,16 +395,6 @@ a:hover {
 
 .skills__item{
   position: relative;
-}
-
-.skills__item:nth-child(5)::after{
-  content: "in progress...";
-  font: 12px/16px 'Libre Franklin', sans-serif;
-  font-weight: 400;
-  color: #fff;
-  bottom: -15px;
-  left: 43px;
-  position: absolute;
 }
 
 .skills__img {
