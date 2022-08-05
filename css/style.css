@@ -407,7 +407,7 @@ a:hover {
 .works {
   background-color: #fff;
   padding: 85px 100px 75px 65px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .works__inner {
@@ -431,9 +431,17 @@ a:hover {
   color: #2c4355;
 }
 
+.works__subtitle {
+  font: 18px/22px 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  color: #2c4355;
+  margin: 0;
+  padding-bottom: 17px;
+}
+
 .works__list {
   list-style: none;
-  margin: 0 0 100px 0;
+  margin: 0 0 70px 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 350px);
@@ -446,12 +454,50 @@ a:hover {
   border-radius: 10px;
 }
 
+.card{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.card__svgicon {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.card__title {
+  font: 16px/16px 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  color: #2c4355;
+  padding: 0 0 1px 7px;
+}
+
+.card__svgicon:hover .github_0 {
+  fill:#24292f;
+}
+
+
+.works__code{
+  display: flex;
+  text-align: start;
+  align-items: center;
+}
+
+.works__code-text{
+  font: 16px/16px 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  color: #2c4355;
+  padding: 0 7px 1px 5px;
+}
+
 .works__img {
   width: 380px;
   height: 200px;
   transition: 1s;
   border-radius: 10px;
   border: 1px solid #2c4355;
+  margin-bottom: 10px;
 }
 
 .works__img:hover {
@@ -1037,7 +1083,7 @@ a:hover {
     font-size: 34px;
   }
 
-  .aboutme__subtitle {
+  .aboutme__subtitle{
     font: 18px/22px 'Libre Franklin', sans-serif;
     font-weight: 700;
   }
