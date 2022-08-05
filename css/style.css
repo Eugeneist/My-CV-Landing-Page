@@ -849,9 +849,14 @@ a:hover {
     margin: 0 0 45px 0;
   }
 
-  .works__item {
+  .works__item{
     padding: 0 0 50px 0;
   }
+
+  .card{
+    align-items: center;
+  }
+
 
   .works__item:last-child {
     padding: 0;
